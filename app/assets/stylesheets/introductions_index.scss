@@ -2,9 +2,9 @@
 
 .top{
   &__guide{
-    height: 50px;
-    padding: 30px 45px 0 0;
     position: fixed;
+    z-index: 1;
+    top: 25px;
     left: 70%;
     &__contents{
       display: inline;
