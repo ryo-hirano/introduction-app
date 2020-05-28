@@ -1,1 +1,21 @@
-// 
+// ヘッダーデザイン
+
+.top{
+  &__guide{
+    height: 50px;
+    padding: 30px 45px 0 0;
+    position: fixed;
+    left: 70%;
+    &__contents{
+      display: inline;
+      margin-right: 15px;
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+      a:hover{
+        color: red;
+      }
+    }
+  }
+}
