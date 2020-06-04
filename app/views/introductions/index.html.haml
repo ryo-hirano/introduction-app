@@ -1,85 +1,197 @@
-.content
-  .content__about
+.contents
+  .contents__about{id: "header"}
+    = image_tag asset_path("mike-kelley1.jpg")
     .contents__about__title
-      %h1.first-name
-      %h1.family-name
-      %p.subtitle
+      %h1.name
+        RYO HIRANO's
+      %h1.name
+        PORTFOLIO
 
-  .content__about
-    .content__about__introduction
-      %h1.title
-      %img.image
-      %p.about-me
-
-  .contents__about
-    .contents__about__highschool
-      %h1.title
-      %p.about-me
-      %img.image
-
-  .contents__about
-    .contents__about__univercity
-      %h1.title
-      %img.image
-      %p.about-me
-
-  .contents__about
-    .contents__about__employee
-      %h1.title
-      %img.image
-      %p.about-me
-
-  .content__about
-    .contents__about__skills
-      %ul.html
-        %li.image
-        %li.language
-        %li.level
-      %ul.css
-        %li.image
-        %li.language
-        %li.level
-      %ul.javascript
-        %li.image
-        %li.language
-        %li.level
-      %ul.ruby
-        %li.image
-        %li.language
-        %li.level
-      %ul.rails
-        %li.image
-        %li.language
-        %li.level
-    .contents__about__Tools
-      %ul.sql
-        %li.image
-        %li.language
-        %li.level
-      %ul.git
-        %li.image
-        %li.language
-        %li.level
-      %ul.slack
-        %li.image
-        %li.language
-        %li.level
-      %ul.trello
-        %li.image
-        %li.language
-        %li.level
-    .content__about__explanation
+  .contents__about{id: "about"}
+    = image_tag asset_path("mike-kelley2.jpg")
+    .contents__about__fade
+      .myprof
+        %h1.title
+          About Me
+        = image_tag asset_path("IMG_2028.jpg")
+        %p.about-me
+          %br
+            Name: 平野 諒(ヒラノ リョウ)
+          %br
+            Age:  23
+          %br
+            Birthday: 1996.09.10
+          %br
+            From: 愛知県豊明市
+          %br
+            College: 南山大学 総合政策学部 総合政策学科 
+          %br
+            Introduction:
+          %br
+            新卒で名古屋の総合広告代理店に入社。商品販促用のwebページを制作する案件に携わった際、プログラミングに興味をもつ。その後、制作担当からProgateを教えてもらいHTML&CSSの学習を始める。次第に他の言語にも興味を持つようになり、IT業界への転職を本格的に考え、テックキャンプへの通学を決意。
+          
 
   .contents__about
-    .contents__about__works
+    = image_tag asset_path("mike-kelley3.jpg")
+    .contents__about__fade
+      .high-school
+        %h1.title
+          My history1
+        = image_tag asset_path("IMG_6830.JPG"), class: "one"
+        = image_tag asset_path("IMG_6831.JPG"), class: "two"
+        %p.about-me
+          %br
+            高校時代はハンドボール部に所属。小・中学生からの経験者が多い中、高校からハンドボールを始める。所属してから3年間ディフェンスの練習をし続けレギュラーを獲得。学生最後の総体では県大会ベスト4の成績を収める。当時の同期・監督とは今でも定期的にハンドボールをしている。
+        
+
+  .contents__about
+    = image_tag asset_path("mike-kelley4.jpg")
+    .contents__about__fade
+      .univercity
+        %h1.title
+          My history2
+        = image_tag asset_path("IMG_6832.JPG"), class: "one"
+        = image_tag asset_path("IMG_1793.JPG"), class: "two"
+        %p.about-me
+          %br
+            南山大学総合政策学部に入学し、バレーボールサークルに入部。3年次から部長を務め、数々のイベントを企画。4年次の卒業旅行では同級生とキャンピングカーでアメリカを横断。豊かな自然、現地の方々との交流、仲間と過ごした時間は私の人生において忘れることのない一生の宝となった。
+
+  .contents__about
+    = image_tag asset_path("mike-kelley5.jpg")
+    .contents__about__fade
+      .employee
+        %h1.title
+          My history3
+        = image_tag asset_path("IMG_6834.JPG")
+        %p.about-me
+          新卒で名古屋の総合広告代理店に入社。新規顧客への提案や、既存顧客への追加提案・広告効果レポーティングを行う。
+          %br
+          2019年9月~2020年1月の上半期売上は目標金額に対して103%(9,350,000円)を達成。また、1~3年目の若手社員による新聞広告の協賛セールス企画では売上順位1位を記録。
+          %br
+
+
+  .contents__about{id: "skills"}
+    = image_tag asset_path("mike-kelley6.jpg")
+    .contents__about__fade
       %h1.title
-      %a.about
-      %p.guide
+        Skills
+      .skills
+        %ul.skill
+          %li.image
+            %i.fab.fa-html5
+          %li.language
+            HTML5
+          %li.level
+            7 month
+        %ul.skill
+          %li.image
+            %i.fab.fa-css3-alt
+          %li.language
+            CSS3
+          %li.level
+            7 month
+        %ul.skill
+          %li.image
+            %i.fab.fa-js-square
+          %li.language
+            Javascript
+          %li.level
+            3 month
+        %ul.skill
+          %li.image
+            %i.far.fa-gem
+          %li.language
+            Ruby
+          %li.level
+            4 month
+        %ul.skill
+          %li.image
+            %i.fas.fa-times
+          %li.language
+            Rails
+          %li.level
+            4 month
+      .tools
+        %ul.tool
+          %li.image
+            %i.fas.fa-database
+          %li.language
+            MYSQL
+          %li.level
+            3 month
+        %ul.tool
+          %li.image
+            %i.fab.fa-github
+          %li.language
+            GitHub
+          %li.level
+            3 month
+        %ul.tool
+          %li.image
+            %i.fab.fa-slack
+          %li.language
+            Slack
+          %li.level
+            3 month
+        %ul.tool
+          %li.image
+            %i.fab.fa-trello
+          %li.language
+            Trello
+          %li.level
+            3 month
+      %p.explanation
+        修練のすえ身につけたスキルになります。広く浅くではありますがフロントからバックエンドまで幅広くスキルアップに取り組んできました。現状使用できる言語は少ないですが、学習を深めていき更にスキルの幅を広げていきたいと考えています。現在はSwiftを学習しています。
+
+  .contents__about{id: "works"}
+    = image_tag asset_path("mike-kelley7.jpg")
+    .contents__about__fade
+      %h1.title
+        Works
+      .works
+        %ul.work
+          %li.image
+            = image_tag asset_path("show-posts.gif")
+          %li.name
+            FashionBlog
+          %li.intro
+            ファッション・ライフスタイル等を投稿できるアプリです。
+            ファッション・グルメ・音楽など、自分のライフスタイルを投稿できます。
+          %li.link
+            =link_to "GitHub", "https://github.com/ryo-hirano/postmap"
+            =link_to "Link", "https://fashionblog09.herokuapp.com/"
+
+        %ul.work
+          %li.image
+            = image_tag asset_path("furimatop.jpg")
+          %li.name
+            Furima App
+          %li.intro
+            プログラミングスクールのカリキュラムでフリーマーケットアプリを共同開発しました。＊Basic認証を実装しているためご利用の方はお問い合わせください。
+          %li.link
+            =link_to "GitHub", "https://github.com/ryo-hirano/furimax73"
+            =link_to "Link", "http://18.180.148.8/"
+        %ul.work
+          %li.image
+            = image_tag asset_path("myportfolio.gif")
+          %li.name
+            PortFolio
+          %li.intro
+            自作のポートフォリオです。プログラミングに興味を持つきっかけとなったランディングページをイメージして制作しました。
+          %li.link
+            =link_to "GitHub", "https://github.com/ryo-hirano/introduction-app"
+            =link_to "Link", ""
   
-  .contents__about
-    .contents__about__form
-      %h1.title
-      %p.guide
-      %a.contact
-      
-
+  .contents__about{id: "contact"}
+    = image_tag asset_path("mike-kelley8.jpg"), class: "last-pict"
+    .contents__about__lastfade
+      .form
+        %h1.title
+          Contact
+        %p.about-me
+          最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。感想、挨拶などお気軽にご連絡ください。お待ちしております。
+        .contact
+          =link_to "https://docs.google.com/forms/d/e/1FAIpQLSfi66_wZ4_fv6gMi9Kva4eB50N_hoJwFQIPaB4dUszj8nhN4A/viewform" do
+            %i.far.fa-envelope
+          =link_to "https://twitter.com/ryonoprograming" do
+            %i.fab.fa-twitter
